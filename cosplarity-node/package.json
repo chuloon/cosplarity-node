@@ -1,0 +1,14 @@
+{
+  "name": "cosplarity-node",
+  "version": "0.0.0",
+  "description": "cosplarity-node",
+  "main": "app.js",
+  "author": {
+    "name": "Ben"
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}
