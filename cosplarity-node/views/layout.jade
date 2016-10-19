@@ -4,9 +4,25 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title #{title} - My Express Application
-    link(rel='stylesheet', type='text/css', href='/stylesheets/bootstrap.min.css')
+
+    // Global stylesheets
+    link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900')
+    link(rel='stylesheet', type='text/css', href='/assets/css/icons/icomoon/styles.css')
+    link(rel='stylesheet', type='text/css', href='/assets/css/bootstrap.css')
+    link(rel='stylesheet', type='text/css', href='/assets/css/core.css')
+    link(rel='stylesheet', type='text/css', href='/assets/css/components.css')
+    link(rel='stylesheet', type='text/css', href='/assets/css/colors.css')
+
+    // Custom stylesheets
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+
+    // Core JS files
     script(src='/javascripts/modernizr-2.6.2.js')
+    script(src='/assets/js/plugins/loaders/pace.min.js')
+    script(src='/assets/js/core/libraries/jquery.min.js')
+    script(src='/assets/js/core/libraries/bootstrap.min.js')
+    script(src='text/javascript" src="/assets/js/plugins/loaders/blockui.min.js')
+
   body
     .navbar.navbar-inverse.navbar-fixed-top
       .container
@@ -15,23 +31,21 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='/') Application name
+          a.navbar-brand(href='/') Cosplarity
         .navbar-collapse.collapse
           ul.nav.navbar-nav
             li
               a(href='/') Home
             li
-              a(href='/about') About
+              a(href='/contact') How it works
             li
-              a(href='/contact') Contact
+              a(href='/about') About
     .container.body-content
       block content
       hr
       footer
         p &copy; #{year} - My Express Application
 
-    script(src='/javascripts/jquery-1.10.2.js')
-    script(src='/javascripts/bootstrap.js')
     script(src='/javascripts/respond.js')
 
     block scripts
